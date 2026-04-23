@@ -10,37 +10,57 @@
     <!-- Sidebar Navigation -->
     <aside class="sidebar">
         <div class="sidebar-content">
-            <!-- Logo/Brand -->
-            <div class="brand">
-                <h1 class="brand-name">DIEGO RAGO</h1>
-                <p class="brand-tagline">PORTFOLIO</p>
-            </div>
+            <header class="site-header">
+                <div class="logo-wrap" data-hover-hint="logo">
+                    <div class="logo logo-text">
+                        <a href="index.html" class="brand-link preserve-whitespace">Diego Rago Portfolio</a>
+                    </div>
+                </div>
+                <button type="button" class="hamburger-click-area js-hamburger" aria-label="Toggle menu" aria-expanded="false">
+                    <span class="hamburger">
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                    </span>
+                </button>
+            </header>
 
-            <!-- Navigation -->
-            <nav class="sidebar-nav">
-                <a href="index.html" class="sidebar-link">WORK</a>
-                <a href="about.html" class="sidebar-link">ABOUT</a>
-                <a href="#contact" class="sidebar-link">CONTACT</a>
+            <nav class="sidebar-nav" data-hover-hint="nav">
+                <ul class="group">
+                    <li class="gallery-title"><a href="index.html" class="sidebar-link active">WORK</a></li>
+                </ul>
+                <div class="page-title">
+                    <a href="about.html" class="sidebar-link">ABOUT</a>
+                </div>
+                <div class="page-title">
+                    <a href="#contact" class="sidebar-link">CONTACT</a>
+                </div>
+                <div class="social-links pf-nav-social" data-hover-hint="navSocialIcons">
+                    <ul>
+                        <li>
+                            <a href="https://es.fiverr.com/diegorago138" target="_blank" rel="noopener" class="social-link" title="Fiverr">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M20.4,3.6H3.6C3.269,3.6,3,3.869,3,4.2v15.6c0,0.331,0.269,0.6,0.6,0.6h16.8c0.331,0,0.6-0.269,0.6-0.6V4.2 C21,3.869,20.731,3.6,20.4,3.6z M20.4,19.8H3.6V4.2h16.8V19.8z M8.4,15.6h2.4v-1.2c0.6-0.9,1.5-1.5,2.7-1.5c1.8,0,3,1.2,3,3.3 c0,2.1-1.2,3.3-3,3.3c-1.2,0-2.1-0.6-2.7-1.5v1.2H8.4V15.6z M13.5,18.3c1.2,0,1.8-0.9,1.8-2.1c0-1.2-0.6-2.1-1.8-2.1 c-1.2,0-1.8,0.9-1.8,2.1C11.7,17.4,12.3,18.3,13.5,18.3z"/>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/diegoragoart" target="_blank" rel="noopener" class="social-link" title="Instagram">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:contact@diegorago.com" class="social-link" title="Email">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 12.713l-11.985-9.713h23.97l-11.985 9.713zm0 2.574l-12-9.725v15.438h24v-15.438l-12 9.725z"/>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </nav>
-
-            <!-- Social Links -->
-            <div class="social-links">
-                <a href="https://es.fiverr.com/diegorago138" target="_blank" rel="noopener" class="social-link" title="Fiverr">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
-                    </svg>
-                </a>
-                <a href="https://www.instagram.com/diegoragoart" target="_blank" rel="noopener" class="social-link" title="Instagram">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
-                    </svg>
-                </a>
-                <a href="mailto:contact@diegorago.com" class="social-link" title="Email">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M12 12.713l-11.985-9.713h23.97l-11.985 9.713zm0 2.574l-12-9.725v15.438h24v-15.438l-12 9.725z"/>
-                    </svg>
-                </a>
-            </div>
         </div>
     </aside>
 
@@ -53,9 +73,9 @@
                 <h1>Mondongo</h1>
                 <p class="category">Game Development • Pixel Art • RPG</p>
                 <p class="description">
-                    A pixel art RPG project featuring unique characters and immersive environments.
-                    Mondongo showcases retro-inspired Game Boy aesthetics with detailed character designs
-                    and atmospheric backgrounds.
+                    A pixel art RPG world built around eccentric characters and a slightly rough, handmade atmosphere.
+                    Mondongo mixes expressive sprites with environments that feel lived-in, playful, and rooted in retro
+                    game language without losing personality.
                 </p>
             </div>
 
@@ -72,42 +92,49 @@
                 <!-- Characters -->
                 <button type="button" class="gallery-item" data-lightbox-src="assets/mondongo/MONDET.gif" data-lightbox-type="image" data-lightbox-alt="Mondet Character">
                     <img src="assets/mondongo/MONDET.gif" alt="Mondet Character" loading="lazy" decoding="async">
+                    <span class="gallery-item-caption">Mondet</span>
                 </button>
 
                 <button type="button" class="gallery-item" data-lightbox-src="assets/mondongo/DONATO.gif" data-lightbox-type="image" data-lightbox-alt="Donato Character">
                     <img src="assets/mondongo/DONATO.gif" alt="Donato Character" loading="lazy" decoding="async">
+                    <span class="gallery-item-caption">Donato</span>
                 </button>
 
                 <button type="button" class="gallery-item" data-lightbox-src="assets/mondongo/GOUDA.gif" data-lightbox-type="image" data-lightbox-alt="Gouda Character">
                     <img src="assets/mondongo/GOUDA.gif" alt="Gouda Character" loading="lazy" decoding="async">
+                    <span class="gallery-item-caption">Gouda</span>
                 </button>
 
                 <!-- Backgrounds -->
                 <button type="button" class="gallery-item" data-lightbox-src="assets/mondongo/bg6.png" data-lightbox-type="image" data-lightbox-alt="Background Environment">
                     <img src="assets/mondongo/bg6.png" alt="Background Environment" loading="lazy" decoding="async">
+                    <span class="gallery-item-caption">Street Scene</span>
                 </button>
 
                 <button type="button" class="gallery-item" data-lightbox-src="assets/mondongo/bar.png" data-lightbox-type="image" data-lightbox-alt="Bar Background">
                     <img src="assets/mondongo/bar.png" alt="Bar Background" loading="lazy" decoding="async">
+                    <span class="gallery-item-caption">Bar Interior</span>
                 </button>
 
                 <button type="button" class="gallery-item" data-lightbox-src="assets/mondongo/bar compras12.png" data-lightbox-type="image" data-lightbox-alt="Shop Background">
                     <img src="assets/mondongo/bar compras12.png" alt="Shop Background" loading="lazy" decoding="async">
+                    <span class="gallery-item-caption">Shop Interior</span>
                 </button>
 
                 <button type="button" class="gallery-item" data-lightbox-src="assets/mondongo/battle16.png" data-lightbox-type="image" data-lightbox-alt="Battle Scene">
                     <img src="assets/mondongo/battle16.png" alt="Battle Scene" loading="lazy" decoding="async">
+                    <span class="gallery-item-caption">Battle Scene</span>
                 </button>
             </div>
 
             <!-- Project Navigation -->
             <div class="project-nav">
-                <a href="minita-casita.html" class="project-nav-link">
+                <a href="survival-horror.html" class="project-nav-link">
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></svg>
                     Previous
                 </a>
                 <a href="index.html" class="project-nav-link">Home</a>
-                <a href="fighting.html" class="project-nav-link">
+                <a href="minita-casita.html" class="project-nav-link">
                     Next
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M8.59 16.59L10 18l6-6-6-6-1.41 1.41L13.17 12z"/></svg>
                 </a>
@@ -115,9 +142,9 @@
 
             <section class="contact-section" id="contact">
                 <p class="contact-eyebrow">Contact</p>
-                <h2>Looking for expressive RPG pixel art?</h2>
+                <h2>Interested in working together?</h2>
                 <p class="contact-copy">
-                    Diego can handle animated characters, environments, UI-friendly sprites, and cohesive visual sets for retro-inspired worlds.
+                    Diego is available for selected freelance collaborations in pixel art, character animation, environments, comics, and visual development.
                 </p>
                 <div class="contact-links">
                     <a href="mailto:contact@diegorago.com" class="contact-link">Email</a>

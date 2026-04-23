@@ -9,34 +9,57 @@
 <body>
     <aside class="sidebar">
         <div class="sidebar-content">
-            <div class="brand">
-                <h1 class="brand-name">DIEGO RAGO</h1>
-                <p class="brand-tagline">PORTFOLIO</p>
-            </div>
+            <header class="site-header">
+                <div class="logo-wrap" data-hover-hint="logo">
+                    <div class="logo logo-text">
+                        <a href="index.html" class="brand-link preserve-whitespace">Diego Rago Portfolio</a>
+                    </div>
+                </div>
+                <button type="button" class="hamburger-click-area js-hamburger" aria-label="Toggle menu" aria-expanded="false">
+                    <span class="hamburger">
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                    </span>
+                </button>
+            </header>
 
-            <nav class="sidebar-nav">
-                <a href="index.html" class="sidebar-link">WORK</a>
-                <a href="about.html" class="sidebar-link">ABOUT</a>
-                <a href="#contact" class="sidebar-link">CONTACT</a>
+            <nav class="sidebar-nav" data-hover-hint="nav">
+                <ul class="group">
+                    <li class="gallery-title"><a href="index.html" class="sidebar-link active">WORK</a></li>
+                </ul>
+                <div class="page-title">
+                    <a href="about.html" class="sidebar-link">ABOUT</a>
+                </div>
+                <div class="page-title">
+                    <a href="#contact" class="sidebar-link">CONTACT</a>
+                </div>
+                <div class="social-links pf-nav-social" data-hover-hint="navSocialIcons">
+                    <ul>
+                        <li>
+                            <a href="https://es.fiverr.com/diegorago138" target="_blank" rel="noopener" class="social-link" title="Fiverr">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M20.4,3.6H3.6C3.269,3.6,3,3.869,3,4.2v15.6c0,0.331,0.269,0.6,0.6,0.6h16.8c0.331,0,0.6-0.269,0.6-0.6V4.2 C21,3.869,20.731,3.6,20.4,3.6z M20.4,19.8H3.6V4.2h16.8V19.8z M8.4,15.6h2.4v-1.2c0.6-0.9,1.5-1.5,2.7-1.5c1.8,0,3,1.2,3,3.3 c0,2.1-1.2,3.3-3,3.3c-1.2,0-2.1-0.6-2.7-1.5v1.2H8.4V15.6z M13.5,18.3c1.2,0,1.8-0.9,1.8-2.1c0-1.2-0.6-2.1-1.8-2.1 c-1.2,0-1.8,0.9-1.8,2.1C11.7,17.4,12.3,18.3,13.5,18.3z"/>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/diegoragoart" target="_blank" rel="noopener" class="social-link" title="Instagram">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:contact@diegorago.com" class="social-link" title="Email">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 12.713l-11.985-9.713h23.97l-11.985 9.713zm0 2.574l-12-9.725v15.438h24v-15.438l-12 9.725z"/>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </nav>
-
-            <div class="social-links">
-                <a href="https://es.fiverr.com/diegorago138" target="_blank" rel="noopener" class="social-link" title="Fiverr">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
-                    </svg>
-                </a>
-                <a href="https://www.instagram.com/diegoragoart" target="_blank" rel="noopener" class="social-link" title="Instagram">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
-                    </svg>
-                </a>
-                <a href="mailto:contact@diegorago.com" class="social-link" title="Email">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M12 12.713l-11.985-9.713h23.97l-11.985 9.713zm0 2.574l-12-9.725v15.438h24v-15.438l-12 9.725z"/>
-                    </svg>
-                </a>
-            </div>
         </div>
     </aside>
 
@@ -46,9 +69,9 @@
                 <h1>Survival Horror</h1>
                 <p class="category">Environment Art • Character Animation • Props</p>
                 <p class="description">
-                    A top-down survival horror concept focused on mood, readable domestic environments,
-                    and clean interactive props. The set combines environmental storytelling with a grounded
-                    walk cycle and object animations suited for exploration-driven gameplay.
+                    A top-down survival horror concept focused on domestic spaces, quiet tension, and readable interaction.
+                    The set combines environmental storytelling with prop animation and a restrained walk cycle suited to
+                    slower, exploration-driven gameplay.
                 </p>
             </div>
 
@@ -59,18 +82,22 @@
             <div class="gallery-grid">
                 <button type="button" class="gallery-item" data-lightbox-src="assets/survival-horror/living room.png" data-lightbox-type="image" data-lightbox-alt="Living room environment">
                     <img src="assets/survival-horror/living room.png" alt="Living room environment" loading="lazy" decoding="async">
+                    <span class="gallery-item-caption">Living Room</span>
                 </button>
 
                 <button type="button" class="gallery-item" data-lightbox-src="assets/survival-horror/Raul_walking_down.gif" data-lightbox-type="image" data-lightbox-alt="Raul walking animation">
                     <img src="assets/survival-horror/Raul_walking_down.gif" alt="Raul walking animation" loading="lazy" decoding="async">
+                    <span class="gallery-item-caption">Walk Cycle</span>
                 </button>
 
                 <button type="button" class="gallery-item" data-lightbox-src="assets/survival-horror/refri.gif" data-lightbox-type="image" data-lightbox-alt="Fridge prop animation">
                     <img src="assets/survival-horror/refri.gif" alt="Fridge prop animation" loading="lazy" decoding="async">
+                    <span class="gallery-item-caption">Fridge Prop</span>
                 </button>
 
                 <button type="button" class="gallery-item" data-lightbox-src="assets/survival-horror/lavarropas.gif" data-lightbox-type="image" data-lightbox-alt="Washing machine prop animation">
                     <img src="assets/survival-horror/lavarropas.gif" alt="Washing machine prop animation" loading="lazy" decoding="async">
+                    <span class="gallery-item-caption">Washer Prop</span>
                 </button>
             </div>
 
@@ -80,7 +107,7 @@
                     Previous
                 </a>
                 <a href="index.html" class="project-nav-link">Home</a>
-                <a href="minita-casita.html" class="project-nav-link">
+                <a href="mondongo.html" class="project-nav-link">
                     Next
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M8.59 16.59L10 18l6-6-6-6-1.41 1.41L13.17 12z"/></svg>
                 </a>
@@ -88,9 +115,9 @@
 
             <section class="contact-section" id="contact">
                 <p class="contact-eyebrow">Contact</p>
-                <h2>Need atmosphere, props, and readable exploration art?</h2>
+                <h2>Interested in working together?</h2>
                 <p class="contact-copy">
-                    Diego is available for environment pixel art, interactive object animation, character walk cycles, and cohesive art direction for mood-heavy game scenes.
+                    Diego is available for selected freelance collaborations in pixel art, character animation, environments, comics, and visual development.
                 </p>
                 <div class="contact-links">
                     <a href="mailto:contact@diegorago.com" class="contact-link">Email</a>

@@ -129,6 +129,9 @@ function initSmoothScroll() {
                 behavior: 'smooth',
                 block: 'start'
             });
+
+            window.history.replaceState(null, '', href);
+            updateActiveNavLink();
         });
     });
 }
@@ -138,6 +141,7 @@ function initSmoothScroll() {
 // ==========================================
 function updateActiveNavLink() {
     const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+    const currentHash = window.location.hash;
     const sidebarLinks = document.querySelectorAll('.sidebar-link');
     const workPages = new Set([
         'index.html',
@@ -150,10 +154,13 @@ function updateActiveNavLink() {
     sidebarLinks.forEach(link => {
         link.classList.remove('active');
         const href = link.getAttribute('href');
+        const isHashLink = href && href.startsWith('#');
 
-        if (href === currentPage) {
+        if (isHashLink && href === currentHash) {
             link.classList.add('active');
-        } else if (href === 'index.html' && workPages.has(currentPage)) {
+        } else if (!isHashLink && href === currentPage && !currentHash) {
+            link.classList.add('active');
+        } else if (!currentHash && href === 'index.html' && workPages.has(currentPage)) {
             link.classList.add('active');
         }
     });
@@ -163,30 +170,75 @@ function updateActiveNavLink() {
 // MOBILE MENU TOGGLE
 // ==========================================
 function initMobileMenu() {
-    const toggleBtn = document.createElement('button');
-    toggleBtn.className = 'mobile-menu-toggle';
-    toggleBtn.innerHTML = '<span></span><span></span><span></span>';
-    toggleBtn.setAttribute('aria-label', 'Toggle Menu');
-    toggleBtn.setAttribute('aria-expanded', 'false');
-
-    document.body.appendChild(toggleBtn);
-
     const sidebar = document.querySelector('.sidebar');
-    if (!sidebar) return;
+    const toggleBtn = document.querySelector('.js-hamburger');
+    if (!sidebar || !toggleBtn) return;
+
+    let backdrop = document.querySelector('.mobile-backdrop');
+    if (!backdrop) {
+        backdrop = document.createElement('button');
+        backdrop.type = 'button';
+        backdrop.className = 'mobile-backdrop';
+        backdrop.setAttribute('aria-hidden', 'true');
+        backdrop.tabIndex = -1;
+        document.body.appendChild(backdrop);
+    }
+
+    const sidebarLinks = sidebar.querySelectorAll('a');
+
+    const closeMenu = () => {
+        sidebar.classList.remove('mobile-open');
+        backdrop.classList.remove('is-visible');
+        document.body.classList.remove('mobile-menu-open');
+        toggleBtn.setAttribute('aria-expanded', 'false');
+    };
+
+    const openMenu = () => {
+        sidebar.classList.add('mobile-open');
+        backdrop.classList.add('is-visible');
+        document.body.classList.add('mobile-menu-open');
+        toggleBtn.setAttribute('aria-expanded', 'true');
+    };
 
     toggleBtn.addEventListener('click', () => {
-        sidebar.classList.toggle('mobile-open');
+        if (window.innerWidth > 768) return;
+
         const isOpen = sidebar.classList.contains('mobile-open');
-        toggleBtn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+        if (isOpen) {
+            closeMenu();
+        } else {
+            openMenu();
+        }
     });
 
+    backdrop.addEventListener('click', closeMenu);
+
     document.addEventListener('click', (e) => {
-        if (window.innerWidth <= 768) {
-            if (!sidebar.contains(e.target) && !toggleBtn.contains(e.target)) {
-                sidebar.classList.remove('mobile-open');
-                toggleBtn.setAttribute('aria-expanded', 'false');
-            }
+        if (window.innerWidth > 768) return;
+
+        if (sidebar.classList.contains('mobile-open') && !sidebar.contains(e.target)) {
+            closeMenu();
         }
+    });
+
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+            closeMenu();
+        }
+    });
+
+    window.addEventListener('resize', () => {
+        if (window.innerWidth > 768) {
+            closeMenu();
+        }
+    });
+
+    sidebarLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            if (window.innerWidth <= 768) {
+                closeMenu();
+            }
+        });
     });
 }
 
@@ -198,4 +250,5 @@ document.addEventListener('DOMContentLoaded', () => {
     initSmoothScroll();
     updateActiveNavLink();
     initMobileMenu();
+    window.addEventListener('hashchange', updateActiveNavLink);
 });
