@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,7 +11,9 @@
     <title>Diego Rago - Pixel Artist & Character Designer</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&family=Inter:wght@400;500;600;700&display=swap">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400&family=Inter:wght@400;500;600;700&display=swap" as="style">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400&family=Inter:wght@400;500;600;700&display=swap" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400&family=Inter:wght@400;500;600;700&display=swap"></noscript>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -60,7 +62,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="mailto:contact@diegorago.com" class="social-link" title="Email">
+                            <a href="mailto:rago.avi@gmail.com" class="social-link" title="Email" aria-label="Email Diego Rago">
                                 <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
                                     <path d="M12 12.713l-11.985-9.713h23.97l-11.985 9.713zm0 2.574l-12-9.725v15.438h24v-15.438l-12 9.725z"/>
                                 </svg>
@@ -86,7 +88,7 @@
             <!-- Project 1: Fighting Game -->
             <a href="fighting.html" class="project-card-home">
                 <div class="project-image">
-                    <img src="assets/fighting/heavy punch1.gif" alt="Fighting game animation" loading="eager" decoding="async">
+                    <img src="assets/fighting/heavy punch1.gif" alt="Fighting game animation" width="492" height="524" loading="eager" fetchpriority="high" decoding="sync">
                 </div>
                 <div class="project-info-home">
                     <h2>Fighting Game</h2>
@@ -135,7 +137,7 @@
                 Diego is available for selected freelance collaborations in pixel art, character animation, environments, comics, and visual development.
             </p>
             <div class="contact-links">
-                <a href="mailto:contact@diegorago.com" class="contact-link">Email</a>
+                <a href="mailto:rago.avi@gmail.com" class="contact-link">Email</a>
                 <a href="https://www.instagram.com/diegoragoart" target="_blank" rel="noopener" class="contact-link">Instagram</a>
                 <a href="https://es.fiverr.com/diegorago138" target="_blank" rel="noopener" class="contact-link">Fiverr</a>
             </div>
